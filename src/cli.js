@@ -1,9 +1,10 @@
-import readlineSync from 'readline-sync';
+// взаимодействие с игроком через консоль
+import _readlineSync from 'readline-sync';
 
- const hi = () => {
-    console.log("Welcome to the Brain Games!");
-    const name = readlineSync.question('May I have your name?: ');
-    console.log(`Hello ${name}`);
-    return name;
+const greeting = () => {
+  console.log('Welcome to the Brain Games!');
+  const name = _readlineSync.question('May I have your name?');
+  console.log(`Hello, ${name}!`);
+  return name;
 };
-export default hi
+export default greeting;
